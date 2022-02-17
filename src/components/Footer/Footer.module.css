@@ -1,0 +1,22 @@
+.footer {
+    /*border: 1px solid rebeccapurple;*/
+    clear: both;
+    position: relative;
+    height: 70px;
+
+
+}
+
+
+.footerLogo {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+.o {
+    font-size: 22px;
+}

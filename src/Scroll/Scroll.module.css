@@ -1,0 +1,182 @@
+.contentDiv {
+    display: grid;
+    width: 100%;
+    position: relative;
+
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+    z-index: 1;
+}
+
+.title {
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    margin-left: 80px;
+}
+
+.boxRec {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    /*/border: 1px solid black;*/
+}
+
+.scrollObject p {
+    transform: rotate(180deg);
+
+
+}
+
+.scrollDiv::-webkit-scrollbar {
+    width: 40px;
+    height: 280px;
+}
+
+.scrollDiv::-webkit-scrollbar-track {
+    background-image: url(../../public/img/reng.png);
+    background-repeat: no-repeat;
+    overflow: auto;
+    height: 300px;
+    margin-block: 4.5em;
+    background-position: top 0 left 30px;
+
+
+}
+
+.scrollDiv::-webkit-scrollbar-thumb {
+    background-image: url(../../public/img/scroll.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 25px;
+
+
+}
+
+
+.sp {
+    position: absolute;
+    top: 270px;
+    left: 900px;
+    z-index: -2;
+    width: 300px;
+    transform: rotate(40deg);
+}
+
+.sp4 {
+
+
+}
+
+.sp3 {
+    position: absolute;
+    top: 180px;
+    left: -150px;
+    z-index: 2;
+
+}
+
+.sp2 {
+    position: absolute;
+    top: 80px;
+    left: -120px;
+    z-index: 2;
+
+
+}
+
+.scrollBg {
+    position: relative;
+    width: 600px;
+    top: 50px;
+    left: 220px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    transform: rotate(180deg);
+
+}
+
+.scrollDiv {
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: white;
+
+}
+
+.scrollObject {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 25px;
+
+}
+
+.contextImg {
+    position: absolute;
+    width: 100px;
+    height: 400px;
+    top: 50px;
+    left: 120px;
+}
+
+/*@style*/
+@keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(
+                var(--bounce-offset)
+        );
+    }
+}
+
+.box.one {
+    --bounce-offset: -20px;
+    animation-duration: 2400ms;
+}
+
+.box.three {
+    --bounce-offset: -100px;
+    animation-duration: 3400ms;
+}
+
+.box {
+    animation: bounce alternate infinite cubic-bezier(.6, .75, .8, 1);
+}
+
+.boxError {
+    position: relative;
+    z-index: -2;
+    height: 100vh;
+    border: 3px solid #e4e4e450;
+    box-shadow: 0 2px 5px #a3a3a3;
+
+}
+
+
+/*@media*/
+@media screen{
+    .boxRec {
+        top: 110px;
+        left: 5px;
+
+    }
+    .scrollBg {
+        top: 100px;
+
+
+    }
+}
+
+

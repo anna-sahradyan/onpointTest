@@ -1,0 +1,255 @@
+.contentDiv {
+    display: grid;
+    width: 100%;
+    position: relative;
+
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+    z-index: 1;
+}
+
+.brandBox{
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    /*border: 1px solid black;*/
+    top: 10px;
+    margin-left: 100px;
+}
+.partChange {
+    width: 700px;
+    height: 550px;
+    position: relative;
+    /*border: 1px solid red;*/
+    top: 70px;
+    left: 250px;
+}
+.blockPagination {
+    position: relative;
+    /*z-index: -2;*/
+
+
+}
+
+
+.bottle {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 500px;
+    /*border: 1px solid black;*/
+    left: 125px;
+    z-index: 2;
+}
+
+.bottleImg {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+.ball1 {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: -30px;
+
+}
+
+.ball2 {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    bottom: -30px;
+    opacity: 35%;
+}
+
+.ball3 {
+    position: absolute;
+    z-index: 2;
+    left: 140px;
+    top: 30px;
+
+}
+
+.ball4 {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: -10px;
+    opacity: 25%;
+
+}
+
+.ball6 {
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    top: 400px;
+
+}
+
+.sp {
+    position: absolute;
+    z-index: 1;
+    left: -215px;
+    top: 400px;
+}
+
+
+
+/*block paginacii*/
+.title1 {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+
+.title2 {
+    position: absolute;
+    width: 200px;
+    top: 70px;
+    left: 150px;
+
+}
+
+
+.boxList {
+    position: absolute;
+    width: 550px;
+    height: 430px;
+    background-color: white;
+    border-radius: 30px;
+    left: 5px;
+    z-index: 1;
+    top: 15px;
+
+}
+
+.close {
+    position: absolute;
+    width: 20px;
+    left: 515px;
+    top: 10px;
+    /*transform: rotate(30deg);*/
+
+}
+
+
+.listLi{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    /*border: 1px solid black;*/
+    left: 40px;
+    top: 20px;
+
+
+}
+.listLi ul{
+    position: absolute;
+    left: 110px;
+    list-style-type: none;
+    top: 100px;
+
+}
+.arrowBlock {
+    position: relative;
+    top: 150px;
+
+}
+.blockBtn{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 90px;
+    left:40px;
+    top:260px;
+}
+.prev{
+    position: absolute;
+    left: 100px;
+    top: 60px;
+}
+.next{
+    position: absolute;
+    left: 200px;
+    top: 60px;
+}
+.nextBtn{
+    position: absolute;
+    left: 130px;
+    top:65px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    border:1px solid black;
+
+}
+.prevBtn{
+    position: absolute;
+    left: 170px;
+    top: 65px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    border:1px solid black;
+}
+.active{
+    background:#e470a3;
+
+}
+/*@style*/
+
+@keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(
+                var(--bounce-offset)
+        );
+    }
+}
+.box.one {
+    --bounce-offset: -20px;
+    animation-duration: 2400ms;
+}
+.box.three {
+    --bounce-offset: -100px;
+    animation-duration: 3400ms;
+}
+
+.box {
+    animation:
+            bounce alternate infinite
+            cubic-bezier(.6, .75, .8, 1);
+}
+/*@media*/
+/*@media*/
+@media screen{
+    .partChange {
+        height: 450px;
+        top: 130px;
+        left: 250px;
+    }
+
+    .brandBox{
+        top: 40px;
+        margin-left: 70px;
+    }
+    .bottle {
+        top: 75px;
+        /*border: 1px solid black;*/
+        left: 125px;
+        z-index: 2;
+    }
+}

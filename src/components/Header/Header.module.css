@@ -1,0 +1,22 @@
+.header {
+    position: relative;
+    display: grid;
+    grid-area: header;
+    margin: 0;
+}
+.logo{
+    position: absolute;
+    left: 150px;
+    top: 15px;
+    width: 150px;
+}
+/*@media*/
+
+@media(max-width: 1024px){
+    .logo{
+        left: 50px;
+        width:200px;
+    }
+
+
+}

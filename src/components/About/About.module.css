@@ -1,0 +1,200 @@
+.contentDiv {
+    grid-area: main;
+    display: grid;
+    width: 100%;
+    position: relative;
+
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+    z-index: 1;
+}
+
+.brandBox {
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    /*border: 1px solid black;*/
+    top: 10px;
+    left: 70px;
+}
+
+.bottle {
+    position: absolute;
+    top: 60px;
+    width: 300px;
+    height: 500px;
+    /*border: 1px solid black;*/
+    left: 150px;
+}
+
+.bottleImg {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+.ball1 {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: -30px;
+
+}
+
+.ball2 {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    bottom: -30px;
+    opacity: 35%;
+}
+
+.ball3 {
+    position: absolute;
+    z-index: 2;
+    left: 140px;
+    top: 30px;
+
+}
+
+.ball4 {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: -10px;
+    opacity: 25%;
+
+}
+.ball6{
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    top: 400px;
+
+}
+.sp{
+    position: absolute;
+    z-index: 1;
+    left: -215px;
+    top: 400px;
+}
+.partChange {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    /*// border: 1px solid black;*/
+    top: 150px;
+    left: 400px;
+}
+
+.title1 {
+    width: 250px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.title2 {
+    position: absolute;
+    width: 300px;
+    top: -5px;
+    left: 20px;
+
+}
+
+.text1 {
+    position: absolute;
+    width: 220px;
+    height: 160px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    top: 100px;
+    left: -20px;
+}
+
+.text2 {
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    width: 190px;
+    height: 100px;
+    background-color:whitesmoke;
+    border-radius: 20px;
+}
+
+.text2 p {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    top:35px;
+    left: 20px;
+
+
+
+}
+.text1 p {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+.icon1 {
+    width: 45px;
+    position: absolute;
+    left: 10px;
+    top: -15px;
+}
+
+.icon2 {
+    width: 45px;
+    position: absolute;
+    left: 10px;
+    top: -15px;
+}
+.btnNext{
+    position: absolute;
+    left: 280px;
+    top: 270px;
+}
+/*style@keyfrem*/
+@keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(
+                var(--bounce-offset)
+        );
+    }
+}
+.box.one {
+    --bounce-offset: -20px;
+    animation-duration: 2400ms;
+}
+.box.three {
+    --bounce-offset: -100px;
+    animation-duration: 3400ms;
+}
+
+.box {
+    animation:
+            bounce alternate infinite
+            cubic-bezier(.6, .75, .8, 1);
+}
+
+/*@media*/
+@media screen{
+    .brandBox{
+        top: 120px;
+        left: 7px;
+    }
+}

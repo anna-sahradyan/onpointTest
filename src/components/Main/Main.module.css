@@ -1,0 +1,185 @@
+.contentDiv {
+    display: grid;
+    width: 100%;
+    position: relative;
+
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+}
+
+.virus {
+    position: absolute;
+    z-index: 1;
+}
+
+.virus5 {
+    margin-left: -80px;
+
+}
+
+.text1{
+    margin-top: 10px;
+    margin-left: 300px;
+
+}
+
+.text2 {
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+
+.virus8a {
+    position: absolute;
+    margin-left: 1100px;
+}
+
+.virus3a {
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 80px;
+}
+
+.virus1 {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 120px;
+}
+
+.sp1 {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -30px;
+    animation-name: sp1;
+
+}
+
+.btnWhat {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.virus7 {
+    position: absolute;
+    margin-left: 500px;
+    bottom: -550px;
+    z-index: 1;
+
+
+}
+
+.virus8b {
+    position: absolute;
+    margin-left: 120px;
+    bottom: -200px;
+    z-index: 2;
+
+}
+
+.sp2 {
+    position: absolute;
+    margin-left: 200px;
+    z-index: 1;
+    top: 300px;
+}
+
+.virus2{
+    position: absolute;
+    margin-left: 200px;
+    z-index: 2;
+    top: 300px;
+}
+
+.virus3b {
+    position: absolute;
+    margin-left: 100px;
+    z-index: 1;
+    top: 300px;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(
+                var(--bounce-offset)
+        );
+    }
+}
+
+.box.one {
+    --bounce-offset: -20px;
+    animation-duration: 3000ms;
+}
+
+.box.three {
+    --bounce-offset: -100px;
+    animation-duration: 3400ms;
+}
+
+.box {
+    animation: bounce alternate infinite cubic-bezier(.6, .75, .8, 1);
+}
+
+/*@media*/
+@media (max-width: 1024px) {
+    .virus5 {
+        margin-left: -80px;
+        width: 120px
+    }
+    .text2{
+        width: 130px;
+        margin-top: 60px;
+    }
+
+    .text1{
+        width: 450px;
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+    .virus1{
+        margin-left: 800px;
+
+    }
+    .virus7{
+        width: 180px;
+    }
+    .virus2{
+        width: 150px;
+
+
+    }
+    .virus8a{
+        margin-left: 800px;
+    }
+    .btnWhat{
+        margin-left: 400px;
+        margin-top: 50px;
+
+    }
+    .btnWhat img{
+        width: 250px;
+    }
+    .sp1{
+        width: 230px;
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .sp2 {
+        margin-left: 100px;
+        top: 500px;
+    }
+    .virus3b{
+        top: 500px;
+    }
+}

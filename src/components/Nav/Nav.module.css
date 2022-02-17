@@ -1,0 +1,30 @@
+.list {
+    width: 100%;
+    position: relative;
+    display: grid;
+}
+
+.navList {
+    width: 1200px;
+}
+
+.navList ul {
+    list-style-type: none;
+    position: absolute;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 150px);
+    padding: 0;
+    margin: 0;
+    left: 500px;
+}
+
+/*@media*/
+@media (max-width: 1024px) {
+    .navList ul {
+        left: 400px;
+
+    }
+
+
+}
